@@ -22,9 +22,9 @@
     SOFTWARE
 #>
 
-# Version 0.1
+# Version 1.0
 
-param ([string]$NamespaceToHandles="",[switch]$UpdateCustomeRulesOnly)
+param ([string]$NamespaceToHandle="",[switch]$UpdateCustomeRulesOnly)
 
 ###Auto Locate
 #Check that Fiddler is insalled
@@ -58,9 +58,9 @@ Else
   }
 
 #Ask users for Domain to handle if not supplied from param
-If (!$NamespaceToHandles)
+If (!$NamespaceToHandle)
   {
-  $NamespaceToHandles = Read-Host -Prompt "Enter Namespace to handle Extended Protection for, Example: contoso.com or FourthStreetCoffee.com"
+  $NamespaceToHandle = Read-Host -Prompt "Enter Namespace to handle Extended Protection for, Example: contoso.com or FourthStreetCoffee.com"
   }
 
 #Backup Custome Rules File
@@ -83,7 +83,7 @@ $LinesToAddToCustomRules = @'
       // Replace telerik.com with whatever servers Fiddler Classic should release credentials to.
       || oSession.host.EndsWith("
 '@
-$LinesToAddToCustomRules += $NamespaceToHandles
+$LinesToAddToCustomRules += $NamespaceToHandle
 $LinesToAddToCustomRules += @'
 "))  
         ) 
