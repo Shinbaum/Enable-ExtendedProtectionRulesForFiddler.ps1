@@ -1,4 +1,5 @@
--Install Fiddler Classic on workstation`n
+-Install Fiddler Classic on workstation
+
 -By default no custom rules file exists
 -Open Fiddler -> Rules -> Customize Rules, will create a new custom rules file that can be modified by this script
 
