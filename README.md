@@ -5,7 +5,7 @@
 -With Fiddler closed run Enable-ExtendedProtectionRulesForFiddler.ps1 from PowerShell<br>
 <br>
 Example:<br>
-Enable-ExtendedProtectionRulesForFiddler.ps1<br>
+**Enable-ExtendedProtectionRulesForFiddler.ps1**<br>
 -This will prompt the user to enter the root domain that need Extended Protection handled for<br>
 -Script will update the Custom Rules file<br>
 -Script will start Fiddler<br>
@@ -14,7 +14,7 @@ Enable-ExtendedProtectionRulesForFiddler.ps1<br>
 <br>
 -Or<br>
 <br>
-Enable-ExtendedProtectionRulesForFiddler.ps1 -NamespaceToHandle Contoso.com<br>
+**Enable-ExtendedProtectionRulesForFiddler.ps1 -NamespaceToHandle Contoso.com**<br>
 -Script will update the Custom Rules file<br>
 -Script will start Fiddler<br>
 -Script will wait for Fiddler to close<br>
@@ -22,6 +22,6 @@ Enable-ExtendedProtectionRulesForFiddler.ps1 -NamespaceToHandle Contoso.com<br>
 <br>
 -Or<br>
 <br>
-Enable-ExtendedProtectionRulesForFiddler.ps1 -NamespaceToHandle Contoso.com -UpdateCustomeRulesOnly<br>
+**Enable-ExtendedProtectionRulesForFiddler.ps1 -NamespaceToHandle Contoso.com -UpdateCustomeRulesOnly**<br>
 -Script will update the Custom Rules file<br>
 -Changes to the Custom Rules file will stay<br>
