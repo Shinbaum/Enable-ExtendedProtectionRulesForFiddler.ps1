@@ -24,7 +24,7 @@
 
 # Version 1.0
 
-param ([string]$NamespaceToHandle="",[switch]$UpdateCustomeRulesOnly)
+param ([string]$NamespaceToHandle="",[switch]$UpdateCustomRulesOnly)
 
 ###Auto Locate
 #Check that Fiddler is insalled
@@ -129,8 +129,8 @@ $UpdatedCustomRulesText = $CustomRulesText.Replace($FunctionLine,$StringToInsert
 Out-File -FilePath $CustomRulesFilePath -InputObject $UpdatedCustomRulesText -Force
 Write-Host "Custom Rules file updated: $CustomRulesFilePath"
 
-#If not UpdateCustomeRulesOnly
-If (!$UpdateCustomeRulesOnly.IsPresent)
+#If not UpdateCustomRulesOnly
+If (!$UpdateCustomRulesOnly.IsPresent)
   {
   #Start Fiddler and wait for Fiddler to exit
   $FiddlerEXEPath = "$FiddlerInstallPath\Fiddler.exe"
