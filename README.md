@@ -22,6 +22,6 @@ Example:<br>
 <br>
 -Or<br>
 <br>
-**Enable-ExtendedProtectionRulesForFiddler.ps1 -NamespaceToHandle Contoso.com -UpdateCustomeRulesOnly**<br>
+**Enable-ExtendedProtectionRulesForFiddler.ps1 -NamespaceToHandle Contoso.com -UpdateCustomRulesOnly**<br>
 -Script will update the Custom Rules file<br>
 -Changes to the Custom Rules file will stay<br>
